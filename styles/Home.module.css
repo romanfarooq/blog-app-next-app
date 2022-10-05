@@ -3,8 +3,8 @@
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  min-height: 70vh;
+  padding: 2rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -115,7 +115,7 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .card,
   .footer {
     border-color: #222;
@@ -126,4 +126,16 @@
   .logo img {
     filter: invert(1);
   }
+} */
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem 1rem;
+}
+
+.navbar li {
+  margin: 0 24px;
+  font-weight: bold;
+  list-style: none;
 }

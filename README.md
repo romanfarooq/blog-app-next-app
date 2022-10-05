@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blog App (Practice project)
+
+This is a practice project for learning Next Js. So styling is not a priority. I am using the [NextJs Tutorials for Beginners](https://www.youtube.com/playlist?list=PLu0W_9lII9agtWvR_TZdb_r0dNI8-lDwG) as a guide.
 
 ## Getting Started
 
