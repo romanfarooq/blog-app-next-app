@@ -12,22 +12,6 @@
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -127,18 +111,6 @@
     filter: invert(1);
   }
 } */
-
-.navbar ul {
-  display: flex;
-  justify-content: center;
-  padding: 0.4rem 1rem;
-}
-
-.navbar li {
-  margin: 0 24px;
-  font-weight: bold;
-  list-style: none;
-}
 
 .heading {
   font-size: 30px;

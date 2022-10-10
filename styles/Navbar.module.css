@@ -1,0 +1,11 @@
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem 1rem;
+}
+
+.navbar li {
+  margin: 0 24px;
+  font-weight: bold;
+  list-style: none;
+}
