@@ -31,8 +31,18 @@ const Home = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Blog -- App</h1>
+        <div className={styles.imageContainer}>
+          <Image
+            className={styles.myImg}
+            src="/homeImg.jpg"
+            alt=""
+            width={237}
+            height={158}
+          />
+        </div>
+        <p className={styles.description}>A blog for coders</p>
         <div className={styles.blogs}>
-          <h2>Popular Blogs</h2>
+          <h2 className={styles.heading}>Popular Blogs</h2>
           <div className={styles.blogItem}>
             <h3>How to learn JavaScript in 2022?</h3>
             <p>JavaScript is the language used to design logic for the web</p>
