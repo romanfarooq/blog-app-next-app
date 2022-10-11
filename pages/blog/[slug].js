@@ -1,28 +1,6 @@
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
 import styles from '../../styles/BlogPost.module.css';
 
-const Slug = () => {
-  const router = useRouter();
-  const [blog, setBlog] = useState(null);
-
-  useEffect(() => {
-    try {
-      if (!router.isReady) {
-        return;
-      }
-      const { slug } = router.query;
-      const getBlog = async () => {
-        const response = await fetch(`http://localhost:3000/api/getBlog?slug=${slug}`);
-        const data = await response.json();
-        setBlog(data);
-      };
-      getBlog();
-    } catch (err) {
-      console.log(err);
-    }
-  }, [router.isReady]);
-
+export default function Slug({ blog }) {
   return (
     <div className={styles.container}>
       {blog && (
@@ -35,6 +13,11 @@ const Slug = () => {
       )}
     </div>
   );
-};
+}
 
-export default Slug;
+export async function getServerSideProps(context) {
+  const { slug } = context.query;
+  const response = await fetch(`http://localhost:3000/api/getBlog?slug=${slug}`);
+  const blog = await response.json();
+  return { props: { blog } };
+}
