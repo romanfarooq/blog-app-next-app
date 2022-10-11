@@ -1,8 +1,30 @@
+import Link from 'next/link';
+import styles from '../../styles/Blog.module.css';
+
 const Blog = () => {
   return (
-    <>
-      <div>Blog</div>
-    </>
+    <div className={styles.container}>
+      <main className={styles.main}>
+        <div className={styles.blogItem}>
+          <Link href="/blog/learn-javaScript">
+            <h3>How to learn JavaScript in 2022?</h3>
+          </Link>
+          <p>JavaScript is the language used to design logic for the web</p>
+        </div>
+        <div className={styles.blogItem}>
+          <Link href="/blog/learn-javaScript">
+            <h3>How to learn JavaScript in 2022?</h3>
+          </Link>
+          <p>JavaScript is the language used to design logic for the web</p>
+        </div>
+        <div className={styles.blogItem}>
+          <Link href="/blog/learn-javaScript">
+            <h3>How to learn JavaScript in 2022?</h3>
+          </Link>
+          <p>JavaScript is the language used to design logic for the web</p>
+        </div>
+      </main>
+    </div>
   );
 };
 
