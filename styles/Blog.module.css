@@ -12,6 +12,6 @@
   align-items: center;
 }
 
-.blogItem h3 {
-  cursor: pointer;
+.blogItem {
+  max-width: 30vw;
 }
