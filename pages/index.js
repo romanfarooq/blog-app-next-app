@@ -12,7 +12,7 @@ const Home = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Blog -- App</h1>
+        <h1 className={styles.title}>&lt;Blog -- App/&gt;</h1>
         <div className={styles.imageContainer}>
           <Image
             className={styles.myImg}
@@ -22,20 +22,23 @@ const Home = () => {
             height={158}
           />
         </div>
-        <p className={styles.description}>A blog for coders</p>
-        <div className={styles.blogs}>
-          <h2 className={styles.heading}>Popular Blogs</h2>
+        <h2>A blog for coders</h2>
+        <div>
+          <h3 className={styles.heading}>Popular Blogs</h3>
           <div className={styles.blogItem}>
             <h3>How to learn JavaScript in 2022?</h3>
             <p>JavaScript is the language used to design logic for the web</p>
+            <button>Read More</button>
           </div>
           <div className={styles.blogItem}>
             <h3>How to learn JavaScript in 2022?</h3>
             <p>JavaScript is the language used to design logic for the web</p>
+            <button>Read More</button>
           </div>
           <div className={styles.blogItem}>
             <h3>How to learn JavaScript in 2022?</h3>
             <p>JavaScript is the language used to design logic for the web</p>
+            <button>Read More</button>
           </div>
         </div>
       </main>
